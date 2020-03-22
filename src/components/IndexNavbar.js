@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import Scrollchor from 'react-scrollchor';
 // reactstrap components
 import {
   Button,
@@ -86,7 +87,11 @@ function IndexNavbar() {
                 <NavLink href="/">Naslovnica</NavLink>
               </NavItem>
               <NavItem>
-                <NavLink href="/login">Objekti</NavLink>
+              
+                <Scrollchor to="#sample-code" className="nav-link">
+                  Objekti
+                </Scrollchor>
+                
               </NavItem>
               <NavItem>
                 <NavLink href="/">Pogodnosti</NavLink>

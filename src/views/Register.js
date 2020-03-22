@@ -21,34 +21,6 @@ import {
 import IndexNavbar from '../components/IndexNavbar';
 
 function Register() {
-    state = {
-        step: 1,
-        firstName: '',
-        lastName: '',
-        email: '',
-        polje1: '',
-        polje2: '',
-        polje3: ''
-    }
-    nextStep = () => {
-        const {step}= this.state;
-        this.setState({
-            step: step + 1
-        });
-    }
-    prevStep = () => {
-        const {step}= this.state;
-        this.setState({
-            step: step - 1
-        });
-    }
-    handleChange = input => e => {
-        this.setState({[input]: e.target.value});
-    }
-    render() {
-        const { step } = this.state
-    }
-
     const [firstFocus, setFirstFocus] = React.useState(false);
     const [lastFocus, setLastFocus] = React.useState(false);
     React.useEffect(() => {
@@ -132,27 +104,8 @@ function Register() {
                     >
                       Prijava
                     </Button>
-                    <div className="pull-left">
-                      <h6>
-                        <a
-                          className="link"
-                          href="/register"
-                        >
-                          Registriraj se
-                        </a>
-                      </h6>
-                    </div>
-                    <div className="pull-right">
-                      <h6>
-                        <a
-                          className="link"
-                          href="/forgotPassword"
-                          
-                        >
-                          Zaboravili ste lozinku?
-                        </a>
-                      </h6>
-                    </div>
+                    
+                    
                   </CardFooter>
                 </Form>
               </Card>

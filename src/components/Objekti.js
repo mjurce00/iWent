@@ -11,28 +11,7 @@ import{
 
 
 // core components
-const people = [
-  {
-    name: 'James',
-    age: 31,
-  },
-  {
-    name: 'John',
-    age: 45,
-  },
-  {
-    name: 'Paul',
-    age: 65,
-  },
-  {
-    name: 'Ringo',
-    age: 49,
-  },
-  {
-    name: 'George',
-    age: 34,
-  }
-];
+
 const objekt = [
     { id: 1, naziv: "Elite Night CLub", lokacija: "asd" },
     { id: 2, naziv: "Luxe lounge bar", lokacija: "asd" },
@@ -44,7 +23,7 @@ const objekt = [
 function Objekti() {
   return (
     <>
-      <div className="section section-images">
+      <div className="section section-images" id="sample-code">
         <Container>
         <Card style={{ width: "20rem" }}>
         <CardImg
@@ -61,6 +40,7 @@ function Objekti() {
         </CardBody>
       </Card>
         </Container>
+       
       </div>
     </>
   );
